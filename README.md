@@ -116,9 +116,23 @@
 ### Module 1 - Code
 
 - OpenAI Agents SDK
+
   - Lightweight
   - Unopinionated
   - Not a big learning curve
+
+- Terminology
+  - <b>Agents</b> = LLMs
+  - <b>Handoffs</b> = interactions
+  - <b>Guardrails</b> = controls
+
+<br>
+<br>
+
+- 3 steps:
+  - Create an instance of Agent
+  - Use `with trace()` to track / monitor
+  - Call `Runner.run()`
 
 ### Module 2 - Designing Agents | Engineering Team with CrewAI
 
