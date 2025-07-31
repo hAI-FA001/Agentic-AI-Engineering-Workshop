@@ -71,6 +71,55 @@
 
 #### Agentic Systems
 
+- 2 Types:
+  - `Workflows`: Predefined orchestration of LLMs and tools
+  - `Agents`: Dynamic orchestration via LLMs
+- Tools give autonomy
+  - Query DB, message other LLMs
+  - "LLM can reach into my computer"
+    - Reality: LLM doesn't execute the tool itself, LLM only responds with the actions needed (the actual code executes the tool)
+
+<br>
+<br>
+
+- Risks:
+  - Unpredictable path
+  - Unpredictable output
+  - Unpredictable costs
+- Solutions:
+  - Monitoring
+  - Guardrails
+
+#### Agentic Frameworks
+
+- 1st layer
+
+  - No framework
+    - Understand under-the-hood
+  - MCP
+    - Protocol to connect agents with data sources and tools
+    - Don't need the "code glue", just conform to MCP standard
+    - Module 3
+
+- 2nd layer
+
+  - OpenAI Agents SDK
+  - CrewAI
+    - Heavier than Agents SDK
+    - YAML configs
+    - Module 2
+
+- 3rd layer
+  - LangGraph
+  - AutoGen
+
+### Module 1 - Code
+
+- OpenAI Agents SDK
+  - Lightweight
+  - Unopinionated
+  - Not a big learning curve
+
 ### Module 2 - Designing Agents | Engineering Team with CrewAI
 
 ### Module 3 - Developing Agents | Autonomous Traders with MCP
