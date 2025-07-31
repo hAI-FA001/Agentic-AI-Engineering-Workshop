@@ -6,6 +6,8 @@
 
 ### Module 1 - Defining Agents | Deep Research with OpenAI Agents
 
+#### Agents
+
 - "Programs where LLM outputs control the workflow"
 - AI solution that involves:
 
@@ -15,10 +17,59 @@
   - A planner
   - Autonomy
 
+<br>
+<br>
+
 - <a href="https://www.youtube.com/watch?v=m9ccaNDS-LI&list=PLRDl2inPrWQVW4aBgenJsTvw97qMhRtb8&index=70">Podcast episode 841 | Andrew Ng</a>
   - In support of LLMs
 - <a href="https://www.youtube.com/watch?v=cuPUh7eTh8k&list=PLRDl2inPrWQVW4aBgenJsTvw97qMhRtb8&index=44">Podcast episode 867 | Andriy Burkov</a>
   - "LLMs are overhyped"
+
+<br>
+<br>
+
+- "Humanity's Last Exam" benchmark
+  - 2500 challenging questions
+  - \> 100 subject areas
+- With agentic design (Deep Research), o3 reaches > 25%
+- Length of tasks AI can do is doubling every 7 months
+  - Q/A -> Count words -> Find facts on web -> Train classifier
+  - Getting closer to 1hr with 50% success rate
+
+<br>
+<br>
+
+- Unprecedented time to develop agents due to:
+  - ML/LLM advancements
+    - PyTorch Lightning, HuggingFace, Agentic Frameworks
+  - Cloud infra
+  - Data
+    - Massive open-source datasets
+  - Open-Source Software
+  - Low-cost Hardware
+  - Dev tools
+    - Drag-and-drop interfaces
+  - Connectivity
+    - Internet, wireless
+  - Supportive regulatory environment
+  - Market demand
+  - Educational resources
+
+<br>
+<br>
+
+- Examples:
+  - Code Generation -> Team of S/W Devs
+    - Module 2
+  - Medical diagnosis
+    - Specialized multi-modal models
+  - Literature review
+  - Design and run experiments, then write paper
+    - Multi-agent
+  - Replace more and more enterprise tasks
+    - Billion $ firm with no employees
+
+#### Agentic Systems
 
 ### Module 2 - Designing Agents | Engineering Team with CrewAI
 
