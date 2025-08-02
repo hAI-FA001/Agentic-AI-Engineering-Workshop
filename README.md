@@ -184,4 +184,54 @@
   - LLM -> Stop (Code)
   - Environment could be: DBs, Internet, IoT
 
+### Module 2 - Code
+
+- CrewAI
+  - Lightweight
+  - More opinionated than OpenAI Agents SDK
+- Concepts
+  - <b>Agent:</b> autonomous unit with: LLM, role, goal, backstory, memory, tools
+    - role, goal and backstory become part of the System Prompt
+    - Idea is to think explicitly in these terms
+  - <b>Task:</b> specific assignment with: description, expected output, agent
+  - <b>Crew:</b> a team of <b>Agents</b> and <b>Tasks</b>
+    - <b>Sequential:</b> run in the order they are defined
+      - More like a workflow
+    - <b>Hierarchical:</b> use a Manager LLM
+      - More autonomy
+
+<br>
+<br>
+
+- 5 steps:
+  - Create with `crewai create my_project`
+  - Fill the config yaml files, define Agents and Tasks
+  - Complete the `crew.py` to create Agents, Tasks and Crew
+  - Update `main.py` to set inputs
+  - Run with `crewai run`
+
+<br>
+<br>
+
+- Giving coding skills is hard and complex
+  - Write code
+  - Execute code
+  - Isolated in a Docker container
+  - Interact with the container for feedback
+- But it's not
+  - `Agent(allow_code_execution=True, code_execution_mode="safe")`
+    - Becomes harder to debug
+  - <b>"Coder Agents"</b>
+    - Any agent that uses code
+    - E.g: Customer support agent using Python for calculations
+
+<br>
+<br>
+
+- Engineering team:
+  - Engr. Lead
+  - Backend Engr.
+  - Frontend Engr.
+  - Test Engr.
+
 ### Module 3 - Developing Agents | Autonomous Traders with MCP
