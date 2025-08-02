@@ -322,4 +322,5 @@ class Account:
         """Provides a developer-friendly string representation of the account."""
         return (f"Account(account_id='{self.account_id}', balance={self.balance:.2f}, "
                 f"holdings={self.holdings}, initial_deposit={self.initial_deposit:.2f})")
+
 ```
