@@ -25,7 +25,7 @@ class Team():
             verbose=True,
             allow_code_execution=True,
             code_execution_mode='safe',  # Docker
-            max_execution_time=120,
+            max_execution_time=500,
             max_retry_limit=3,
         )
     
@@ -43,7 +43,7 @@ class Team():
             verbose=True,
             allow_code_execution=True,
             code_execution_mode='safe',
-            max_execution_time=120,
+            max_execution_time=500,
             max_retry_limit=3,
         )
 
