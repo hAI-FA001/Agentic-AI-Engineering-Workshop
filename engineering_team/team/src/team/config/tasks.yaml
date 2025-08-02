@@ -1,7 +1,7 @@
 design_task:
   description: >
     Take the high level requirements described here and prepare a detailed design for the engineer;
-    everything should be in 1 python module, but outline the classes and methods in the module.
+    everything should be in 1 Python module, but outline the classes and methods in the module.
     Here are the requirements: {requirements}
     IMPORTANT: Only output the design in markdown format, laying out in detail the classes and functions in the module, describing the functionality.
   expected_output: >
@@ -11,10 +11,10 @@ design_task:
 
 code_task:
   description: >
-    Write a python module that implements the design described by the engineering lead, in order to achieve the requirements.
+    Write a Python module that implements the design described by the engineering lead, in order to achieve the requirements.
     Here are the requirements: {requirements}
   expected_output: >
-    A python module that implements the design and achieves the requirements.
+    A Python module that implements the design and achieves the requirements.
     IMPORTANT: Output ONLY the raw Python code without any markdown formatting, code block delimiters, or backticks.
     The output should be valid Python code that can be directly saved to a file and executed.
   agent: backend_engineer
