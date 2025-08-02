@@ -136,4 +136,52 @@
 
 ### Module 2 - Designing Agents | Engineering Team with CrewAI
 
+#### Workflow Design Patterns
+
+- Blog post from Anthropic, "Building Effective Agents"
+- <b>Prompt Chaining</b>
+  - Decompose into fixed sub-tasks
+  - Why?
+    - More control
+    - Guardrails for each step
+    - Easier debugging
+  - E.g:
+    - LLM1 (outline) -> Code (check brand guidelines) -> LLM2 (full draft) -> LLM3 (polish + SEO)
+    - LLM1 (pseudocode) -> Code (check architectural soundness) -> LLM2 (actual code) -> LLM3 (documentation + test cases)
+- <b>Routing</b>
+  - Direct an input into a specialized subtask (separation of concerns)
+    - LLM Router routes input to specialized LLMs
+  - E.g:
+    - Patient symptoms -> LLM Router -> specialized LLM (cardiology, neurological, dermatological)
+    - Legal document -> LLM Router (categorize) -> specialized LLM (contracts, compliance, litigation)
+- <b>Parallelization</b>
+  - Break tasks, run concurrently
+    - Coordinator (code) -> LLMs -> Aggregator (code)
+  - E.g:
+    - Research papers -> specialized LLMs (methodology, statistical analysis, interpretation of results) -> Aggregator
+    - Market data -> specialized LLMs (tech analysis, healthcare, energy) -> Aggregator
+- <b>Orchestrator-Worker</b>
+  - Break tasks dynamically, combine
+    - Similar to previous but Coordinator and Aggregator are LLMs (renamed to "Orchestrator" and "Synthesizer")
+  - Similar examples
+- <b>Evaluator-Optimizer</b>
+  - LLM output is validated by another
+    - Input -> Generator - Solution -> Evaluator - Accepted -> Output
+    - Input -> Generator <- Reject with Feedback - Evaluator
+    - Loop introduced
+  - E.g:
+    - Evaluator ensuring coding standards and security
+    - Evaluator ensuring effectiveness, age appropriateness, alignment with learning objectives
+
+#### Agents in Contrast
+
+- Open-ended
+  - We don't define specific flows
+- Feedback loops
+- No fixed path
+  - Higher risks and costs but we can minimize these with good design
+- E.g: Human -> LLM <- Action / Feedback -> Environment
+  - LLM -> Stop (Code)
+  - Environment could be: DBs, Internet, IoT
+
 ### Module 3 - Developing Agents | Autonomous Traders with MCP
