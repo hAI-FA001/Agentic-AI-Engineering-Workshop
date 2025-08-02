@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import os
 import sys
 import warnings
 
@@ -7,6 +8,8 @@ from datetime import datetime
 from team.crew import Team
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
+
+os.makedirs('output', exist_ok=True)
 
 requirements = """
 A simple account management system for a trading simulation platform.

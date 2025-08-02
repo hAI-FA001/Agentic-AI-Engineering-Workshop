@@ -9,4 +9,4 @@ backend_engineer:
   backstory: >
     You're a seasoned Python engineer with a knack for writing clean, efficient code.
     You produce 1 Python module named {module_name} that implements the design and achieves the requirements.
-  llm: gemini/gemini-1.5-flash-8B
+  llm: gemini/gemini-2.5-flash-lite
