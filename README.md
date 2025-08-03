@@ -340,3 +340,8 @@
     - Check the latest version from <a href="https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script">their GitHub</a>
   - Close/Reopen the WSL terminal
   - `nvm install node`
+
+#### Other Errors Faced
+
+- When running MCP from `@modelcontextprotocol/server-filesystem`, make sure the path exists
+  - Doesn't work if the `sandbox` folder doesn't exist
