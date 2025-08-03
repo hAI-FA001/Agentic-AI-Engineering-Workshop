@@ -263,3 +263,16 @@
   - Frictionless integration
   - Exploding ecosystem
   - HTML was just a standard too
+
+<br>
+<br>
+
+- 3 components:
+  - <b>Host:</b> an app with LLMs
+    - Can be: Any LLM app on your desktop (Claude Desktop, Cursor, our own Agent architecture)
+    - Can not be: Claude on the web (claude.ai)
+  - <b>MCP Client:</b> Inside <b>Host</b>, connects 1:1 to <b>MCP Server</b>
+  - <b>MCP Server:</b> Provides tools, context, prompts
+- Example:
+  - Google Maps is an <b>MCP Server</b> with geolocation tools
+  - Claude Desktop can be configured to run an <b>MCP Client</b> that launches the Google Maps <b>MCP Server</b>
