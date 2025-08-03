@@ -272,7 +272,30 @@
     - Can be: Any LLM app on your desktop (Claude Desktop, Cursor, our own Agent architecture)
     - Can not be: Claude on the web (claude.ai)
   - <b>MCP Client:</b> Inside <b>Host</b>, connects 1:1 to <b>MCP Server</b>
+    - For every MCP Server, we have 1 MCP Client
   - <b>MCP Server:</b> Provides tools, context, prompts
 - Example:
   - Google Maps is an <b>MCP Server</b> with geolocation tools
   - Claude Desktop can be configured to run an <b>MCP Client</b> that launches the Google Maps <b>MCP Server</b>
+
+<br>
+<br>
+
+- Architecture
+  - Locally
+    - Your computer runs the Host
+      - Host may be Cursor, Claude Desktop, etc
+    - The Host creates MCP Clients (also on your computer)
+    - MCP Clients spin up MCP Servers (also on your computer, unlike the traditional Client-Server idea)
+    - Every MCP Server has 1 MCP Client (1:1 connection)
+  - Remotely
+    - A remote server may also be running MCP Servers
+    - Need MCP Clients (locally) to connect to these MCP Servers (remote)
+  - MCP Server might access an API on a remote server
+    - E.g: Google Maps MCP Server needs information from Google's API
+
+<br>
+<br>
+
+- Misconception: MCP Servers run remotely
+- Reality: Download an Open-Source MCP Server and run it locally
