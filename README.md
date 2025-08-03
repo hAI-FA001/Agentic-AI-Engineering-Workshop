@@ -329,24 +329,44 @@
   - Mention it in the System Prompt
   - Or use a subset of tools returned by `list_tools()` and pass it to the `tools` argument in `Agent()`
 
-#### Notes for Windows
+#### Notes for Windows (WSL) and MCP
 
-- Install WSL
-- Navigate to this directory
-  - Windows directories are in `/mnt/`, e.g `/mnt/c/Users/<User Name>/Desktop/some-folder`
+##### Install WSL
+
+- Navigate to the agentic workshop directory
+  - Windows directories are in `/mnt/`
+  - E.g: `/mnt/c/Users/<User Name>/Desktop/some-folder`
 - Create a new virtual env (if current venv isn't compatible with Linux)
   - `pip install uv`
     - Installs in global environment
   - `python3 -m uv venv -p 3.12.3 --seed <venv path/name>`
+    - I had python 3.12.3
   - `source <venv path>/bin/activate`
   - `pip install uv`
     - Installs in virtual environment
-  - `uv sync`
-- Install NodeJS
-  - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash`
-    - Check the latest version from <a href="https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script">their GitHub</a>
-  - Close/Reopen the WSL terminal
-  - `nvm install node`
+  - `uv sync --active`
+
+<br>
+
+##### Install NodeJS
+
+- `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash`
+  - Check the latest version from <a href="https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script">their GitHub</a>
+- Close/Reopen the WSL terminal
+- `nvm install node`
+
+<br>
+
+##### Playwright MCP
+
+- Go to an empty directory (wherever you want to install it)
+- Run: `npm init playwright@latest`
+- It'll ask for the config, I chose:
+  - TypeScript or JavaScript: `Javascript`
+  - Where to put tests: `tests`
+  - Add GitHub Actions: `false`
+  - Install Playwright Browsers: `true`
+  - Install Playwright OS Dependencies: `true`
 
 #### Other Errors Faced
 
