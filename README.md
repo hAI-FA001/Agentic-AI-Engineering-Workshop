@@ -329,14 +329,15 @@
   - Mention it in the System Prompt
   - Or use a subset of tools returned by `list_tools()` and pass it to the `tools` argument in `Agent()`
 
-#### Notes for Windows (WSL) and MCP
+## Notes for Windows (WSL) and MCP
 
-##### Install WSL
+### Setup in WSL
 
+- Open the WSL terminal
 - Navigate to the agentic workshop directory
   - Windows directories are in `/mnt/`
   - E.g: `/mnt/c/Users/<User Name>/Desktop/some-folder`
-- Create a new virtual env (if current venv isn't compatible with Linux)
+- Set up a new virtual env (if current venv isn't compatible with Linux) by running:
   - `pip install uv`
     - Installs in global environment
   - `python3 -m uv venv -p 3.12.3 --seed <venv path/name>`
@@ -348,37 +349,52 @@
 
 <br>
 
-##### Install NodeJS
+### Installing NodeJS in WSL
 
-- `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash`
+- Run: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash`
   - Check the latest version from <a href="https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script">their GitHub</a>
 - Close/Reopen the WSL terminal
-- `nvm install node`
-- Create links (e.g., `sudo npx` won't work otherwise):
+- Run: `nvm install node`
+- Create links (so, e.g., `sudo npx` will work) by running:
   - `sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"`
   - `sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"`
   - `sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npx" "/usr/local/bin/npx"`
 
 <br>
 
-##### Playwright MCP
+### Playwright MCP
 
 - Go to an empty directory (wherever you want to install it)
 - Run: `npm init playwright@latest`
-- It'll ask for the config, I chose:
+- It'll ask for config, I chose:
   - TypeScript or JavaScript: `Javascript`
   - Where to put tests: `tests`
   - Add GitHub Actions: `false`
   - Install Playwright Browsers: `true`
   - Install Playwright OS Dependencies: `true`
 
-<br>
+#### Resolving Playwright Issues
 
-- If there are issues with the last step:
+- If there are issues with the last few steps (when it says something like `switching to root to install dependencies`, or stays stuck for a while without any outputs):
   - Restart the system
+  - Open WSL
   - Run: `sudo npx playwright install-deps`
 
-#### Other Errors Faced
+<br>
+
+- If you see this error in the trace:
+<pre>
+   Error: browserType.launchPersistentContext: Chromium distribution 'chrome' is not found at /opt/google/chrome/chrome
+   Run "npx playwright install chrome"
+</pre>
+- Do this:
+  - Restart
+  - Open WSL
+  - Navigate to the folder where you installed playwright (where you used `npm init`)
+  - Run: `npx playwright install chrome`
+    - If you see a `could not resolve host: dl.google.com` error, try running the command again
+
+### Other Errors
 
 - When running MCP from `@modelcontextprotocol/server-filesystem`, make sure the path exists
-  - Doesn't work if the `sandbox` folder doesn't exist
+  - Won't work if the `sandbox` folder doesn't exist
