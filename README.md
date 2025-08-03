@@ -354,6 +354,10 @@
   - Check the latest version from <a href="https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script">their GitHub</a>
 - Close/Reopen the WSL terminal
 - `nvm install node`
+- Create links (e.g., `sudo npx` won't work otherwise):
+  - `sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"`
+  - `sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"`
+  - `sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npx" "/usr/local/bin/npx"`
 
 <br>
 
@@ -370,11 +374,8 @@
 
 <br>
 
-- If there are errors with `sudo npx`
-  - Create links:
-    - `sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"`
-    - `sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"`
-    - `sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npx" "/usr/local/bin/npx"`
+- If there are issues with the last step:
+  - Restart the system
   - Run: `sudo npx playwright install-deps`
 
 #### Other Errors Faced
