@@ -321,3 +321,22 @@
 - 6 MCP Servers, 44 tools, 2 resources
 - Agents
 - Autonomous
+
+#### Notes for Windows
+
+- Install WSL
+- Navigate to this directory
+  - Windows directories are in `/mnt/`, e.g `/mnt/c/Users/<User Name>/Desktop/some-folder`
+- Create a new virtual env (if current venv isn't compatible with Linux)
+  - `pip install uv`
+    - Installs in global environment
+  - `python3 -m uv venv -p 3.12.3 --seed <venv path/name>`
+  - `source <venv path>/bin/activate`
+  - `pip install uv`
+    - Installs in virtual environment
+  - `uv sync`
+- Install NodeJS
+  - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash`
+    - Check the latest version from <a href="https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script">their GitHub</a>
+  - Close/Reopen the WSL terminal
+  - `nvm install node`
