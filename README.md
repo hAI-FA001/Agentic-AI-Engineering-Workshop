@@ -313,3 +313,11 @@
 - Why not?
   - If it's only for us, then just make tools
     - `@function_tool` decorator
+
+### Module 3 - Code
+
+- Autonomous Traders
+- Commercial project (most projects are technical, like Deep Research)
+- 6 MCP Servers, 44 tools, 2 resources
+- Agents
+- Autonomous
