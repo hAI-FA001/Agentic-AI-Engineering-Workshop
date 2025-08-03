@@ -299,3 +299,17 @@
 
 - Misconception: MCP Servers run remotely
 - Reality: Download an Open-Source MCP Server and run it locally
+
+<br>
+<br>
+
+#### Making an MCP Server
+
+- Why?
+  - Sharing of tools and resources
+  - Consistently incorporate MCP Servers
+    - Call tools in the same way
+  - Understand the plumbing
+- Why not?
+  - If it's only for us, then just make tools
+    - `@function_tool` decorator
