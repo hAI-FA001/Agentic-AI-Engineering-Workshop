@@ -394,6 +394,15 @@
   - Run: `npx playwright install chrome`
     - If you see a `could not resolve host: dl.google.com` error, try running the command again
 
+<br>
+
+- If you see `Request Timed Out` or `Temporary Failure in Name Resolution` errors:
+  - Change nameserver in `/etc/resolv.conf` to `8.8.8.8`
+  - Optionally, change the env var `DISPLAY=:0` by running:
+    - `export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0`
+      - This sets it to `8.8.8.8:0`
+    - It only changes it for the session
+
 ### Other Errors
 
 - When running MCP from `@modelcontextprotocol/server-filesystem`, make sure the path exists
