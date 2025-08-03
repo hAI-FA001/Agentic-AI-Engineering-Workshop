@@ -322,6 +322,13 @@
 - Agents
 - Autonomous
 
+<br>
+<br>
+
+- To avoid using all tools from MCP Server:
+  - Mention it in the System Prompt
+  - Or use a subset of tools returned by `list_tools()` and pass it to the `tools` argument in `Agent()`
+
 #### Notes for Windows
 
 - Install WSL
