@@ -235,3 +235,31 @@
   - Test Engr.
 
 ### Module 3 - Developing Agents | Autonomous Traders with MCP
+
+#### MCP
+
+- "Model Context Protocol"
+
+<br>
+<br>
+
+- It's not a:
+  - Framework for building agents
+  - Fundamental change to how agents work
+  - Way to code agents
+- It is a:
+  - Protocol (standard)
+  - Way to integrate tools, resources, prompts
+  - "USB-C for AI apps"
+
+<br>
+<br>
+
+- Reasons to not be excited:
+  - Is a standard (not the tools themselves)
+  - LangChain already has a big tool ecosystem
+  - Any function can already be turned into a tool
+- Reasons to be excited:
+  - Frictionless integration
+  - Exploding ecosystem
+  - HTML was just a standard too
