@@ -329,6 +329,46 @@
   - Mention it in the System Prompt
   - Or use a subset of tools returned by `list_tools()` and pass it to the `tools` argument in `Agent()`
 
+### Module 4 - Implications
+
+#### Workforce Implications
+
+- More jobs created by AI than lost
+- Funding for reskilling programs is key
+
+<br>
+<br>
+
+- For data scientists to future-proof:
+  - AI trends
+    - SuperDataScience Podcast
+  - Multi-agent orchestration and management
+  - Don't underestimate the power of foundational subjects
+    - Things like Linear Algebra, Calculus, Probability, Statistics, Algorithms, Data Structures, Optimization
+    - Practically applied, e.g. for performance optimizations
+    - Jon's YouTube channel has these
+  - Domain expertise
+    - Understanding the businesses you work with
+  - Human-AI collaboration skills
+  - Honing communication and influence skills within organization
+    - E.g. Ability to convince people to invest
+
+<br>
+<br>
+
+- AI agents play a big part in "Protopia"
+  - Abundant energy
+    - Making solar panels, batteries etc more efficient
+  - High quality nutrition for everyone
+  - Extended lifespans
+  - Education
+  - Freedom from violence
+  - Freedom of expression
+  - Sustainability
+  - Cultural preservation
+  - Exploration
+  - Sense of community
+
 ## Notes for Windows (WSL) and MCP
 
 ### Setup in WSL
