@@ -2,7 +2,7 @@ import gradio as gr
 import pandas as pd
 import plotly.express as px
 
-from util import css, js, Color
+from utils import css, js, Color
 
 from accounts import Account
 from database import read_log
