@@ -2,3 +2,4 @@
 .venv-linux
 .env
 trading_floor/playwright_installation
+__pycache__
