@@ -1,6 +1,36 @@
 # Agentic AI Engineering Workshop
 
-<a href="https://www.youtube.com/watch?v=LSk5KaEGVk4&list=WL&index=1&t=1s">Youtube Link</a>
+<a href="https://www.youtube.com/watch?v=LSk5KaEGVk4&list=WL&index=1&t=1s">Youtube Link</a> for the amazing workshop.
+
+## Table of Contents
+
+### Modules
+
+- [Module 1 - Defining Agents | Deep Research with OpenAI Agents](#module-1---defining-agents--deep-research-with-openai-agents)
+  - [Agents](#agents)
+  - [Agentic Systems](#agentic-systems)
+  - [Agentic Frameworks](#agentic-frameworks)
+- [Module 1 - Code](#module-1---code)
+- [Module 2 - Designing Agents | Engineering Team with CrewAI](#module-2---designing-agents--engineering-team-with-crewai)
+  - [Workflow Design Patterns](#workflow-design-patterns)
+  - [Agents in Contrast](#agents-in-contrast)
+- [Module 2 - Code](#module-2---code)
+- [Module 3 - Developing Agents | Autonomous Traders with MCP](#module-3---developing-agents--autonomous-traders-with-mcp)
+  - [MCP](#mcp)
+  - [Making an MCP Server](#making-an-mcp-server)
+- [Module 3 - Code](#module-3---code)
+- [Module 4 - Implications](#module-4---implications)
+  - [Workforce Implications](#workforce-implications)
+  - [Protopia](#protopia)
+
+### My Notes
+
+- [Notes for Windows (WSL) and MCP](#notes-for-windows-wsl-and-mcp)
+  - [Setup in WSL](#setup-in-wsl)
+  - [Installing NodeJS in WSL](#installing-nodejs-in-wsl)
+  - [Playwright MCP](#playwright-mcp)
+    - [Resolving Playwright Issues](#resolving-playwright-issues)
+- [Other Errors](#other-errors)
 
 ## Modules
 
@@ -355,6 +385,8 @@
 
 <br>
 <br>
+
+#### Protopia
 
 - AI agents play a big part in "Protopia"
   - Abundant energy
