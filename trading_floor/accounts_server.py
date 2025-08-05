@@ -38,3 +38,13 @@ async def change_strategy(name: str, strategy: str) -> str:
     """At your discretion, call this to change your investment strategy"""
     return Account.get(name).change_strategy(strategy)
 
+@mcp.resource("accounts://accounts_server/{name}")
+async def read_accounts_resource(name: str) -> str:
+    return Account.get(name.lower()).report()
+
+@mcp.resource("accounts://strategy/{name}")
+async def read_strategy_resource(name: str) -> str:
+    return Account.get(name.lower()).get_strategy()
+
+if __name__ == "__main__":
+    mcp.run(transport='stdio')
