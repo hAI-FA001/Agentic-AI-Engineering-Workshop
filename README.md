@@ -410,3 +410,6 @@
   - Won't work if the `sandbox` folder doesn't exist
 
 - For errors when running the Accounts MCP Server (such as timeout errors), run `uv run accounts_server.py --active` manually from the terminal first so it installs the packages and to see what it's doing
+
+- For the memory MCP Server, make sure the folders exist
+  - Won't work if the `memory` folder doesn't exist
