@@ -5,7 +5,7 @@ from agents import FunctionTool
 
 import json
 
-params = StdioServerParameters(command="uv", args=["run", "acounts_server.py"], env=None)
+params = StdioServerParameters(command="uv", args=["run", "accounts_server.py"], env=None)
 
 async def list_account_tools():
     async with stdio_client(params) as streams:
