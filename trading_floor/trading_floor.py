@@ -17,7 +17,7 @@ RUN_EVEN_WHEN_MARKET_IS_CLOSED = os.getenv('RUN_EVEN_WHEN_MARKET_IS_CLOSED', 'fa
 names = ['Warren', 'George', 'Ray', "Cathie"]
 lastnames = ['Patience', 'Bold', 'Systematic', 'Crypto']
 
-model_names = ['gemini-2.5-flash']*4
+model_names = ['gemini-2.5-flash-lite']*4
 short_model_names = ['Gemini 2.5 Flash']*4
 
 def create_traders() -> List[Trader]:

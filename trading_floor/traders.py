@@ -22,7 +22,7 @@ MAX_TURNS = 30
 gemini_client = AsyncOpenAI(base_url=GEMINI_BASE_URL, api_key=gemini_api_key)
 
 def get_model(model_name: str):
-    return OpenAIChatCompletionsModel('gemini-2.5-flash', gemini_client)
+    return OpenAIChatCompletionsModel(model_name, gemini_client)
 
 async def get_researcher(mcp_servers, model_name) -> Agent:
     return Agent(
