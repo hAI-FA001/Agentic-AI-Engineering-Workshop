@@ -412,4 +412,9 @@
 - For errors when running the Accounts MCP Server (such as timeout errors), run `uv run accounts_server.py --active` manually from the terminal first so it installs the packages and to see what it's doing
 
 - For the memory MCP Server, make sure the folders exist
+
   - Won't work if the `memory` folder doesn't exist
+
+- For `mcp-google-custom-search-server` to handle paths with spaces, change the `if` condition at the end of `src/index.ts` to:
+  - `if (fileURLToPath(import.meta.url) === process.argv[1])`
+  - and add `import { fileURLToPath } from "url";` at the top of the file
