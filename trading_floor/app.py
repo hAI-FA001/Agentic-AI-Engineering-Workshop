@@ -84,7 +84,7 @@ class Trader:
     
     def get_portfolio_value(self) -> str:
         portfolio_value = self.account.calculate_portfolio_value() or 0.0
-        pnl = self.account.calculate_profit_loss() or 0.0
+        pnl = self.account.calculate_profit_loss(portfolio_value) or 0.0
 
         color = 'green' if pnl >= 0 else 'red'
         emoji = "⬆" if pnl >= 0 else "⬇"
@@ -131,7 +131,7 @@ class TraderView:
             with gr.Row():
                 self.portfolio_value = gr.HTML(self.trader.get_portfolio_value())
             with gr.Row():
-                self.chart = gr.Plot(self.trader.get_portfolio_value_chart(), contianer=True, show_label=False)
+                self.chart = gr.Plot(self.trader.get_portfolio_value_chart(), container=True, show_label=False)
             with gr.Row():
                 self.log = gr.HTML(self.trader.get_logs())
             
