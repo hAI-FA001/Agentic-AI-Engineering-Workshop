@@ -1,6 +1,7 @@
 # Agentic AI Engineering Workshop
 
-<a href="https://www.youtube.com/watch?v=LSk5KaEGVk4&list=WL&index=1&t=1s">Youtube Link</a> for the amazing workshop.
+<a href="https://www.youtube.com/watch?v=LSk5KaEGVk4&list=WL&index=1&t=1s">Youtube Link</a> for the amazing workshop. <br>
+I've used Gemini and other free options for the code in this repo.
 
 ## Table of Contents
 
